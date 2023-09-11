@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  body{scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+  
+  }
+
+  nav{position: fixed;
+    background:linear-gradient( to right, black,rgb(3, 11, 9),rgb(8, 27, 23),rgb(21, 69, 57)) ;
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+  }
+  .logo{
+  height: 100px;
+  width: 35%;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+    
+  }
+  nav ul li{
+    display: inline-flex;
+    margin-block: 30px;
+    
+
+    
+  }
+  nav ul li a{
+    color: white;
+    font-size: 25px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+  }
+  a,a:hover{
+    color: rgb(85, 16, 16);
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-top: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+.container1{
+  width: 100%;
+  height: 100vh;}
+
+ p{
+  position: absolute;
+  top: 0;
+font-style: italic;
+}
+
+.container1 button{margin-bottom: 10px;
+font-size: 25px;
+border-radius: 5px;
+padding: 5px 5px;
+transition: 1s;}
+
+.container1 button:hover{color: firebrick;
+font-weight: bold;}
+
+  .box1{
+  width: 100%;
+z-index: -100;
+height: 100vh;}
+
+
+
+  
+  
+  @media (max-width: 960px){
+
+    
+  
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    
+    }
+    nav ul li{
+      display: block;
+      margin: 70px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 25px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: rgb(85, 16, 16);
+    }
+    #check:checked ~ ul{
+      left: 0;
+    
+    }
+ 
+  }
+  @media (max-width:425){
+
+    label .logo {
+      font-size: 1px;
+      color: red;
+    }
+  }
+
+ 
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
